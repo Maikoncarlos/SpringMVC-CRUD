@@ -1,0 +1,5 @@
+com\maikon\model\Cliente.class
+com\maikon\controller\ClienteController.class
+com\maikon\model\mapper\ClienteMapper.class
+com\maikon\controller\PaginaIniciaController.class
+com\maikon\dao\ClienteDAO.class

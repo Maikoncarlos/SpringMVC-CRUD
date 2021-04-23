@@ -1,0 +1,15 @@
+Create database cadastroclientes;
+
+
+Create table cadastroclientes.clientes (
+nome varchar(50) not null,
+cpf varchar(15) not null,
+rg varchar(15),
+endereco text,
+salario decimal(9,2),
+telefone varchar(15),
+profissao varchar(50) not null,
+descricao text,
+dataNascimento date,
+primary key(cpf)
+);
