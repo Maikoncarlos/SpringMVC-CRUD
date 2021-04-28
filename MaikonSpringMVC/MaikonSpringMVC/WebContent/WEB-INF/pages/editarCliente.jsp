@@ -5,21 +5,36 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>editarCliente</title>
+<title>editar Cliente</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+	crossorigin="anonymous">
+	
 </head>
+
+<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous">
+</script>
+
 <body>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-	<center>
+			 <div class="container-fluid">
 
-		<table width="100%" border="1" cellpadding="2" cellspacing="0">
-			<tr>
-				<th colspan="6">
-					<h3>Editar Clientes</h3>
+			<a class="col-ml-auto ">Editar Clientes</a>
+			
+			</div>
+		</nav>
 				</th>
 				<form:form method="POST" action="${pageContext.servletContext.contextPath}/alterar/">
 					<table>
 						<tr>
-							<td><form:label path="nome">Nome</form:label></td>
+							<td><form:label path="cpf"></form:label></td>
 							<td><form:hidden path="cpf" value="${cliente.cpf}" /></td>
 						</tr>
 						<tr>
@@ -55,13 +70,17 @@
 							<td><form:input path="dataNascimento" value="${cliente.dataNascimento}" /></td>
 						</tr>
 						<tr>
-							<td colspan="2"><input type="submit" value="Alterar Cadatro" /></td>
-						</tr>						
+							<td><button 
+											class="btn btn-dark" type="submit">Alterar
+									</button></td>
+									
+						</tr>											
 						
 					</table>
+					</div>
 					
 				</form:form>			
 				
-	</center>
+	
 </body>
 </html>

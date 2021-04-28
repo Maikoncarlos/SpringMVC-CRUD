@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,8 +19,6 @@
 	crossorigin="anonymous">	
 </script>
 
-<link rel="stylesheet"chref="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-
 </head>
 	<body>
 
@@ -33,7 +30,7 @@
 
 		 <div class="container-fluid">
 
-			<a class="nav-link">Formulário de Clientes </a>
+			<a class="col-ml-auto">Formulário de Clientes </a>
 
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -41,6 +38,9 @@
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			
+			<div class="row">
+   				 <div class="col">
 
 			<div class="collapse navbar-collapse" id="conteudoNavbarSupported">
 				<ul class="navbar-nav ml-auto">
