@@ -20,45 +20,50 @@
 
 	<div class="cantainer-fluid">
 
-	<header> 
-		
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<header>
 
-		 <div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-			<a class="col-ml-auto">Formulário de Clientes </a>
+				<div class="container-fluid">
 
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			
-			<div class="row">
-   				 <div class="col">
+					<a class="col-ml-auto"><h3>Cadastro de Clientes</h3></a>
 
-			<div class="collapse navbar-collapse" id="conteudoNavbarSupported">
-				<ul class="navbar-nav ml-auto">
+					<button class="navbar-toggler" type="button"
+						data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-					<li class="nav-item"><a class="nav-link" href="cliente"> <i
-							class="fas fa-user-plus"></i> Novo Cliente
-					</a></li>
+					<div class="row">
+						<div class="col">
 
-					<li class="nav-item"><a class="nav-link" href="procurar">
-							<i class="fas fa-search"></i> Pesquisar
-					</a></li>
+							<div class="collapse navbar-collapse"
+								id="conteudoNavbarSupported">
+								<ul class="navbar-nav ml-auto">
 
-					<li class="nav-item"><a class="nav-link " href="listaClientes">
-							<i class="far fa-list-alt"></i> Listar Clientes
-					</a></li>
+									<li class="nav-item"><a class="nav-link"
+										href="paginaInicial"> <i class="fas fa-user-plus"></i>
+											Pagina Inicial
+									</a></li>
 
-				</ul>
-			</div>
-		</div>
-		</nav> </header>
+									<li class="nav-item"><a class="nav-link" href="procurar">
+											<i class="fas fa-search"></i> Pesquisar
+									</a></li>
 
-	</div>	<!-- fiim da container -->
+									<li class="nav-item"><a class="nav-link "
+										href="listaClientes"> <i class="far fa-list-alt"></i>
+											Listar Clientes
+									</a></li>
+
+								</ul>
+							</div>
+						</div>
+			</nav>
+		</header>
+
+	</div>
+	<!-- fiim da container -->
 
 	<form:form method="POST"
 		action="${pageContext.servletContext.contextPath}/addCliente">
@@ -66,88 +71,70 @@
 			<div class="form-row">
 				<div class="col-md-4 mb-3">
 					<td><form:label path="nome" for="validationTooltip01">Nome:</form:label></td>
-						<form:input path="nome" type="text" class="form-control"
-							id="validationTooltip01" placeholder="digite seu nome completo"/>
-						
+					<form:input path="nome" type="text" class="form-control"
+						id="validationTooltip01" placeholder="digite seu nome completo" />
+
 				</div>
-				
+
 				<div class="col-md-4 mb-3">
-					<form:label path="cpf" for="validationTooltip02">Cpf:</form:label> 
-					<form:input path="cpf" type="text"
-						class="form-control" id="validationTooltip02"
-						placeholder="digite seu cpf" />
-					
+					<form:label path="cpf" for="validationTooltip02">Cpf:</form:label>
+					<form:input path="cpf" type="text" class="form-control"
+						id="validationTooltip02" placeholder="digite seu cpf" />
+
 				</div>
-				
+
 				<div class="col-md-4 mb-3">
 					<label for="validationTooltipUsername">Rg:</label> <input
 						type="text" class="form-control" id="validationTooltip02"
 						placeholder="digite seu rg" required>
 				</div>
-				
+
 				<div class="form-row">
 					<div class="col-md-4 mb-3">
-						<label for="validationTooltip03">Endereço:</label> 
-						<input
+						<label for="validationTooltip03">Endereço:</label> <input
 							type="text" class="form-control" id="validationTooltip03"
 							placeholder="digite seu endereço" required>
-						
-						</div>
-						<div class="col-md-4 mb-3">
-							<label for="validationTooltip04">Salário:</label>
-							 <input
-								type="text" class="form-control" id="validationTooltip04"
-								placeholder="digite seu salário" required>
-							
-							</div>
-							
-							<div class="col-md-4 mb-3">
-								<label for="validationTooltip05">Telefone:</label> 
-								<input
-									type="text" class="form-control" id="validationTooltip05"
-									placeholder="digite seu telefone para contato" required>
-								
-								</div>
-								
-								<div class="col-md-4 mb-3">
-									<label for="validationTooltip06">Profissão:</label>
-									 <input
-										type="text" class="form-control" id="validationTooltip06"
-										placeholder="Profissão" required>
-									<div class="invalid-tooltip">Please provide a valid zip.</div>
-									</div>
-									
-									<div class="col-md-4 mb-3">
-										<label for="validationTooltip07">Descrição:</label> 
-										<input
-											type="text" class="form-control" id="validationTooltip07"
-											placeholder="descrição do seu cliente" required>
-										
-										</div>
-										
-										<div class="col-md-4 mb-3">
-											<form:label  path="dataNascimento" for="validationTooltip08">Data de Nascimento:</form:label>
-											<form:input  path="dataNascimento" type="text" class="form-control"
-												id="validationTooltip08"
-												placeholder="data de nascimento Ex:11/01/2021"/>
-											
-										</div>
-									</div>
-									
-									<button 
-											class="btn btn-dark" type="submit">Salvar
-									</button>
-									</div>
+
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationTooltip04">Salário:</label> <input
+							type="text" class="form-control" id="validationTooltip04"
+							placeholder="digite seu salário" required>
+
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label for="validationTooltip05">Telefone:</label> <input
+							type="text" class="form-control" id="validationTooltip05"
+							placeholder="digite seu telefone para contato" required>
+
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label for="validationTooltip06">Profissão:</label> <input
+							type="text" class="form-control" id="validationTooltip06"
+							placeholder="Profissão" required>
+						<div class="invalid-tooltip">Please provide a valid zip.</div>
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<label for="validationTooltip07">Descrição:</label> <input
+							type="text" class="form-control" id="validationTooltip07"
+							placeholder="descrição do seu cliente" required>
+					</div>
+
+					<div class="col-md-4 mb-3">
+						<form:label path="dataNascimento" for="validationTooltip08">Data de Nascimento:</form:label>
+						<form:input path="dataNascimento" type="text" class="form-control"
+							id="validationTooltip08"
+							placeholder="data de nascimento Ex:11/01/2021" />
+					</div>
+
+
+					<button class="btn btn-dark" type="submit">Salvar</button>
+				</div>
 		</form>
 	</form:form>
-	
-	<tr>
-		<table class="table table-bordered">
 
-			<td><a class="btn btn-dark" href="listaClientes" role="button">Listar
-					Clientes</a>&nbsp; &nbsp; <a class="btn btn-dark" href="paginaInicial"
-				role="button">Pagina Inicial</a>&nbsp; &nbsp;</td>
-			</tr>
-		</table>
 </body>
 </html>

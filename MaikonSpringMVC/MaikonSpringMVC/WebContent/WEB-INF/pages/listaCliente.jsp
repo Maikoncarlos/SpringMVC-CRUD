@@ -19,71 +19,77 @@
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
 		crossorigin="anonymous">
-</script>
-
+		
+	</script>
 <body>
 
-<header>
+	<header> <nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container-fluid">
 
-			 <div class="container-fluid">
+		<a class="col-ml-auto ">Lista de Clientes </a>
 
-			<a class="col-ml-auto ">Lista de Clientes </a>
-			
+		<div class="row">
+			<div class="col">
+
+				<div class="collapse navbar-collapse" id="conteudoNavbarSupported">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item"><a class="nav-link" href="paginaInicial">
+								<i class="fas fa-user-plus"></i> Pagina Inicial
+						</a></li>
+
+						<li class="nav-item"><a class="nav-link" href="cliente">
+								<i class="fas fa-user-plus"></i> Novo Cliente
+						</a></li>
+
+					</ul>
+				</div>
 			</div>
-		</nav>
-</header>
-	
-
-		<table class="table table-bordered">
-			<tr>
-				<th scope="col">Nome</th>
-				<th scope="col">Cpf</th>
-				<th scope="col">Telefone</th>
-				<th scope="col">Endereço</th>
-				<th scope="col">Descrição</th>
-				<th scope="col">Profissão</th>
-				<th scope="col">Rg</th>
-				<th scope="col">Salário</th>
-				<th scope="col">Data de Nascimento</th>
-				<th scope="col">Ações</th>
-			</tr>
-
-			<c:forEach var="listValue" items="${clientes}">
-
-				<tr>
-					<td>${listValue.nome}</td>
-					<td>${listValue.cpf}</td>
-					<td>${listValue.telefone}</td>
-					<td>${listValue.endereco}</td>
-					<td>${listValue.descricao}</td>
-					<td>${listValue.profissao}</td>
-					<td>${listValue.rg}</td>
-					<td>${listValue.salario}</td>
-					<td><fmt:formatDate pattern="dd/MM/yyyy"
-							value="${listValue.dataDB}" /></td>
 
 
-					<td><a class="btn btn-danger" role="button"
-						href="deletar/${listValue.cpf}">Deletar</a>&nbsp; &nbsp; <a
-						class="btn btn-primary" role="button"
-						href="alterar/${listValue.cpf}">Editar</a>&nbsp; &nbsp;</td>
-				</tr>
+		</div>
+	</nav> </header>
 
 
-			</c:forEach>
+	<table class="table table-bordered">
+		<tr>
+			<th scope="col">Nome</th>
+			<th scope="col">Cpf</th>
+			<th scope="col">Telefone</th>
+			<th scope="col">Endereço</th>
+			<th scope="col">Descrição</th>
+			<th scope="col">Profissão</th>
+			<th scope="col">Rg</th>
+			<th scope="col">Salário</th>
+			<th scope="col">Data de Nascimento</th>
+			<th scope="col">Ações</th>
+		</tr>
+
+		<c:forEach var="listValue" items="${clientes}">
 
 			<tr>
-				
-				<table class="table table-bordered">
+				<td>${listValue.nome}</td>
+				<td>${listValue.cpf}</td>
+				<td>${listValue.telefone}</td>
+				<td>${listValue.endereco}</td>
+				<td>${listValue.descricao}</td>
+				<td>${listValue.profissao}</td>
+				<td>${listValue.rg}</td>
+				<td>${listValue.salario}</td>
+				<td><fmt:formatDate pattern="dd/MM/yyyy"
+						value="${listValue.dataDB}" /></td>
 
-					<td><a class="btn btn-dark" href="cliente" role="button">Novo Cliente</a>&nbsp; &nbsp; 
-						<a class="btn btn-dark" href="paginaInicial" role="button">Pagina Inicial</a>&nbsp; &nbsp;
-					</td>
+
+				<td><a class="btn btn-danger" role="button"
+					href="deletar/${listValue.cpf}">Deletar</a>&nbsp; &nbsp; <a
+					class="btn btn-primary" role="button"
+					href="alterar/${listValue.cpf}">Editar</a>&nbsp; &nbsp;</td>
 			</tr>
-				</table>
-					
-						</header>
-</body>
+
+
+		</c:forEach>
+
+		</body>
 </html>

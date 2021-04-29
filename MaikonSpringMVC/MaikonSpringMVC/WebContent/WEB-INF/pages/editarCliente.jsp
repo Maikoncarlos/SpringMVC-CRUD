@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>editar Cliente</title>
+<title>Alterar Cliente</title>
 
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
@@ -26,11 +26,11 @@
 
 			 <div class="container-fluid">
 
-			<a class="col-ml-auto ">Editar Clientes</a>
+			<a class="col-ml-auto "><h3>Editar Clientes</h3></a>
 			
 			</div>
 		</nav>
-				</th>
+							
 				<form:form method="POST" action="${pageContext.servletContext.contextPath}/alterar/">
 					<table>
 						<tr>
@@ -76,8 +76,7 @@
 									
 						</tr>											
 						
-					</table>
-					</div>
+					</table>				
 					
 				</form:form>			
 				

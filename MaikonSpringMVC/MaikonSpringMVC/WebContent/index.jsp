@@ -1,38 +1,39 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Index</title>
+<title>index</title>
 
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 	crossorigin="anonymous">
+</head>
+<body>
 
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-	crossorigin="anonymous">	
-</script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+		crossorigin="anonymous"></script>
+
 
 </head>
 	<body>
 
-		<div class="cantainer-fluid">
+		<div class="cantainer--fluid">
 
 	<header> 
 		
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 		 <div class="container-fluid">
-
-			<a class="col-ml-auto">Formulário de Clientes </a>
-
-			<button class="navbar-toggler" type="button"
+		 
+		 <a class=""> <h3>Sistema de Clientes</h3>
+		
+						<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -41,7 +42,6 @@
 			
 			<div class="row">
    				 <div class="col">
-
 			<div class="collapse navbar-collapse" id="conteudoNavbarSupported">
 				<ul class="navbar-nav ml-auto">
 
@@ -60,7 +60,8 @@
 				</ul>
 			</div>
 		</div>
-		</nav> </header>
+		</nav>
+		 </header>
 
 	</div>	<!-- fiim da container -->
 
